@@ -109,7 +109,7 @@ body {
 .main_block_form {
     max-width: 600px;
     text-align: center;
-
+    margin: 0 auto;
 }
 
 form {
