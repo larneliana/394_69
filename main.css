@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -58,6 +59,47 @@ body {
     display: block;
 }
 
+.content {
+    display: flex;
+    min-height: 200px;
+    margin-bottom: 15px;
+}
+
+.content_image {
+    display: block;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.content_text {
+    max-width: 500px;
+    padding: 0 15px;
+}
+
+.content_text_header {
+    font-weight: 700;
+}
+
+.content_text_main {
+    border-bottom: 1px dotted rgb(150, 150, 150);
+    padding-bottom: 10px;
+}
+
+.content_text_footer {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.postscript {
+    color: rgb(150, 150, 150);
+}
+
+.avatar {
+    max-width: 50%;
+    border-radius: 50%;
+    margin: 20px;
+}
+
 .main_block {
     display: flex;
     flex-wrap: wrap;
@@ -100,46 +142,6 @@ form {
 .social_image {
     max-width: 70px;
     margin: 5px;
-}
-
-.content {
-    display: flex;
-    min-height: 200px;
-    margin-bottom: 15px;
-}
-
-.content_image {
-    display: block;
-    max-width: 40%;
-    object-fit: cover;
-}
-
-.content_text {
-    padding: 0 15px;
-}
-
-.content_text_header {
-    font-weight: 700;
-}
-
-.content_text_main {
-    border-bottom: 1px dotted rgb(150, 150, 150);
-    padding-bottom: 10px;
-}
-
-.content_text_footer {
-    font-style: italic;
-    padding-top: 10px;
-}
-
-.postscript {
-    color: rgb(150, 150, 150);
-}
-
-.avatar {
-    max-width: 50%;
-    border-radius: 50%;
-    margin: 20px;
 }
 
 .animation {
@@ -269,3 +271,8 @@ form {
         border-radius: 0%;
     }
 }
+
+@media (max-width: 991px) {
+    .content {
+        flex-wrap: wrap;
+    }
