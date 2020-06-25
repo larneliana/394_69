@@ -276,3 +276,7 @@ form {
     .content {
         flex-wrap: wrap;
     }
+    .content_image {
+        width: 100%;
+    }
+}
